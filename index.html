@@ -64,11 +64,27 @@
 			<div class="sect1__container">
 				<div class="sect1__left">
 					
-					<div class="sect1__btn1">
-						<button class="sect1__left--btn1">Online Shopping</button>
+					<div class="sect1__buttons">
+						<div class="sect1__btn1">
+							<div class="sect1__left--btn1" onclick="location.href='https://www.zaful.com'">Online Shopping</div>
+							<div class="sect1__span"></div>
+						</div>
+
+						<div class="sect1__btn2">
+							<div class="sect1__left--btn2">Quality Product</div>
+							<div class="sect1__span--1"></div>
+						</div>
+
+						<div class="sect1__btn3">
+							<div class="sect1__left--btn3">Domestic & International<br>Delivery</div>
+							<div class="sect1__span--2"></div>
+						</div>
+
+						<div class="sect1__btn4">
+							<div class="sect1__left--btn4">Well Organized</div>
+							<div class="sect1__span--3"></div>
+						</div>
 					</div>
-
-
 					
 				</div>
 
@@ -165,10 +181,11 @@
 				<h1 class="aside3__h1">Contact</h1>
 				<p class="aside3__p">For new projects, ideas, business or anything<br>you'd like to discuss, contact with me!</p>
 				<form method="get" action="#">
-					<input type="text" name="your_name" placeholder="Your name..."><br>
-					<input type="email" name="your_email" placeholder="Your email..."><br>
-					<input type="text" name="your_phonenumber" placeholder="Your phone number..." class="phone__number"><br>
-					<textarea placeholder="Your message..."></textarea>
+					<input type="text" name="your_name" placeholder="Your name..." required><br>
+					<input type="email" name="your_email" placeholder="Your email..." required><br>
+					<input type="text" name="your_phonenumber" placeholder="Your phone number..." class="phone__number" required minlength="8" maxlength="12"><br>
+					<textarea placeholder="Your message..." required minlength="30"></textarea><br>
+					<input type="submit" name="contact_submit" value="SEND">
 				</form>
 
 				<div class="aside3__right">
